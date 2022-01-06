@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-dark text-white">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-light ps-5 pe-5">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-light ps-5 pe-5">
     <div class="container-fluid">
       <a class="navbar-brand fw-bolder fs-4" href="#"> Kyungjune Baek </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,23 +20,24 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Publication</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#publication">Publication</a>
         </div>
       </div>
     </div>
   </nav>
-
+  <!-- style="width: 70%;" -->
   <div class="container-fluid mt-5" style="width: 70%;">
 
     <div class="row">
       <div class="col-sm-3">
 
-        <div class="row justify-content-center g-0">
+        <div class="row justify-content-center g-1">
           <img class="my-pic img-thumbnail" src="./resrc/bkj.jpg" alt="">
         </div>
 
-        <div class="row text-center mt-2 g-0">
-          <h5>Kyungjune Baek</h5>
+        <div class="row text-center mt-3 g-0">
+          <h5 class="fw-bold">Kyungjune Baek</h5>
           <h6 class="text-muted">Ph.D. student</h6>
           <h6 class="text-muted">Yonsei Univeristy</h6>
           <p>sites</p>
@@ -53,8 +54,8 @@
 
         </div>
 
-        <div class="row mt-5 g-0">
-          <h5>Interests</h5>
+        <div class="row mt-4 g-0">
+          <h5 class="fw-bold">Interests</h5>
           <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"></li>
@@ -65,13 +66,116 @@
           </nav>
         </div>
 
-        <div class="row mt-5 g-0">
+        <div class="row mt-4 g-0">
           <div class="col-sm g-0">
-            <h5>Experience</h5>
+            <h5 class="fw-bold">Experience</h5>
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">Visiting researcher</strong> 
+                </div>
+                <div class="row ">
+                  Clova AI Research (CLAIR), Naver Corp. 
+                </div>
+                <div class="row ">
+                  Image-to-Image translation
+                </div>
+                <div class="row ">
+                  2019.09 ~ 2020.02 
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">Development</strong> 
+                </div>
+                <div class="row ">
+                  SIT, Yonsei Univ. 
+                </div>
+                <div class="row ">
+                  Real time remote lecture room system construction 
+                </div>
+                <div class="row ">
+                  2018.09 ~ 2019.02 
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#x1F3AF;
+              </div>
+              <div class="col small text-muted">
+                <div class="row">
+                  <strong class="px-0">Intern</strong> 
+                </div>
+                <div class="row">
+                  RAMO Lab. Yonsei Univ. 
+                </div>
+                <div class="row">
+                  Pre-5G simulation with NS-3 
+                </div>
+                <div class="row">
+                  2017.02 ~ 2017.05 
+                </div>
+              </div>
+            </div>
+
           </div>
     
           <div class="col-sm g-0">
-            <h5>Education</h5>
+            <h5 class="fw-bold">Education</h5>
+
+
+            <div class="row mb-2">
+              <div class="col-1 me-1">
+                &#127891;
+              </div>
+              <div class="col small">
+                <div class="row">
+                  <strong class="px-0">Ph.D.</strong> 
+                </div>
+                <div class="row ">
+                  Yonsei Univ.
+                </div>
+                <div class="row ">
+                  Integrated Technology
+                </div>
+                <div class="row ">
+                  2018.03~
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1 me-1">
+                &#127891;
+              </div>
+              <div class="col text-muted small">
+                <div class="row">
+                  <strong class="px-0">B.S.</strong> 
+                </div>
+                <div class="row">
+                  Yonsei Univ.
+                </div>
+                <div class="row">
+                  Electrical & Electronic Eng. and Computer Science 
+                </div>
+                <div class="row">
+                  2014.03 ~ 2018.02 
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -80,7 +184,7 @@
 
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
-        <h3>Publication</h3>
+        <h2 id="publication">Publication</h2>
         <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN" aria-expanded="false" onclick="changeButtonText()">
           Close All
         </button>
@@ -100,7 +204,9 @@
               </div>
               
               <div class="col-sm">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <p>Unsupervised image-to-image translation even without domain labels.</p>
+                <strong>K. Baek</strong>, Y. Choi, Y. Uh, J. Yoo, H. Shim
+                <p>International Conference on Computer Vision (ICCV), 2021</p>
               </div>
             </div>
 
@@ -114,45 +220,57 @@
           <div class="card card-body bg-dark">
             <div class="row">
               <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/tunit.png" alt="">
+                <img class="publication-pic" src="./resrc/gridmix.png" alt="">
               </div>
               
               <div class="col-sm">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <p>Regularization based on mixing samples at the level of patches.</p>
+                <strong>K. Baek*</strong>, D. Bang*, H. Shim (* indicates an equal contribution)
+                <p>Pattern Recognition (PR, IF=7.196), 2021</p>
               </div>
             </div>
           </div>
         </div>
 
         <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="true" aria-controls="PsyNet">
-          PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation
+          <div class="small">
+            PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation
+          </div>
         </button>
         <div class="collapse show" id="PsyNet">
           <div class="card card-body bg-dark">
             <div class="row">
               <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/tunit.png" alt="">
+                <img class="publication-pic" src="./resrc/psynet.png" alt="">
               </div>
               
               <div class="col-sm">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <p>Self-supervised approach to co-localization problem.</p>
+                <strong>K. Baek*</strong>, M. Lee*, H. Shim (* indicates an equal contribution)
+                <p>AAAI Conference on Artificial Intelligence (AAAI), 2020</p>
               </div>
             </div>
           </div>
         </div>
 
         <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="true" aria-controls="EditableGAN">
-          Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously
+          <div class="small">
+            Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously
+          </div>
         </button>
         <div class="collapse show" id="EditableGAN">
           <div class="card card-body bg-dark">
             <div class="row">
               <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/tunit.png" alt="">
+                <img class="publication-pic" src="./resrc/editablegan.png" alt="">
               </div>
               
               <div class="col-sm">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <p>Attribute editing based on the inversion of the latent space of GANs.</p>
+                <strong>K. Baek</strong>, D. Bang, H. Shim
+                <p>Asian Conference on Computer Vision (ACCV), 2018 <br> 
+                  Oral presentation (Best paper Runner-up)
+                </p>
               </div>
             </div>
           </div>
