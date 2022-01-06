@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello world!</title>
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -45,8 +45,12 @@
       </div>
 
       <div class="col-sm">
-        <div class="row g-0 text-center">
-          idescription description description description description description description description description description description description description description description description description description description description 
+        <div class="row g-0">
+          I am a Ph.D student at Yonsei University and a member of Computer Vision and Machine Learning Lab. 
+          My advisor is Hyunjung Shim. I conducted double major, Electrical and Electronic engineering and Computer science at Yonsei University. 
+          Currently, I am serving mandatory military service from 2021 at CVML Lab.
+          Please contact me for the detailed information. 
+
         </div>
 
         <div class="row mt-5 g-0">
@@ -74,9 +78,70 @@
       </div>
     </div>
 
+    <div class="row mt-5">
+      <div class="col-sm-3 text-center">
+        <h3>Publication</h3>
+        <button id="controlAll" class="btn btn-outline-info w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN" aria-expanded="false" onclick="changeButtonText()">
+          Close All
+        </button>
+      </div>
+
+      <div class="col-sm">
+
+        <button class="btn btn-outline-primary w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="false" aria-controls="TUNIT">
+          Rethinking the Truly Unsupervised Image-to-Image Translation
+        </button>
+        <div class="collapse show" id="TUNIT">
+          <div class="card card-body bg-dark">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+
+        <button class="btn btn-outline-primary w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#GridMix" aria-expanded="false" aria-controls="GridMix">
+          GridMix: Strong Regularization Through Local Context Mapping
+        </button>
+        <div class="collapse show" id="GridMix">
+          <div class="card card-body bg-dark">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+
+        <button class="btn btn-outline-primary w-100 small mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="false" aria-controls="PsyNet">
+          PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation
+        </button>
+        <div class="collapse show" id="PsyNet">
+          <div class="card card-body bg-dark">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+
+        <button class="btn btn-outline-primary w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="false" aria-controls="EditableGAN">
+          Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously
+        </button>
+        <div class="collapse show" id="EditableGAN">
+          <div class="card card-body bg-dark">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
   <script src="./js/bootstrap.js"></script>
+  <script>
+    function changeButtonText(){
+      txt = document.getElementById("controlAll").innerText;
+      if (txt == "Close All"){
+        document.getElementById("controlAll").innerText = "Open All";
+      }
+      else{
+        document.getElementById("controlAll").innerText = "Close All";
+      }
+    }
+  </script>
 
 </body>
 </html>
