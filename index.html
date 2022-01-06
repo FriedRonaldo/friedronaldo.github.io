@@ -64,7 +64,11 @@
           My advisor is Hyunjung Shim. I conducted double major, Electrical and Electronic engineering and Computer science at Yonsei University. 
           <strong>Currently, I am serving mandatory military service from 2021 at CVML Lab.</strong>
           Please contact me for the detailed information. 
-          <p> e-mail: bkjbkj12@yonsei.ac.kr</p>
+          <div class="mt-2">
+            <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to copy e-mail" onclick="copy()">
+              bkjbkj12@yonsei.ac.kr
+            </button>
+          </div>
 
         </div>
 
@@ -300,6 +304,7 @@
 
   </div>
 
+  <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.js"></script>
   <script>
     function changeButtonText(){
@@ -311,6 +316,25 @@
         document.getElementById("controlAll").innerText = "Close All";
       }
     }
+
+    function copyToClipboard(val) {
+      const t = document.createElement("textarea");
+      document.body.appendChild(t);
+      t.value = val;
+      t.select();
+      document.execCommand('copy');
+      document.body.removeChild(t);
+    }
+    function copy() {
+      copyToClipboard('bkjbkj12@yonsei.ac.kr');
+    }
+  </script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
   </script>
 
 </body>
