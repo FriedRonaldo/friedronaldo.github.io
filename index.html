@@ -40,8 +40,8 @@
 
         <div class="row text-center mt-3 g-0">
           <h5 class="fw-bold">Kyungjune Baek</h5>
-          <h6 class="text-muted">Ph.D. student</h6>
-          <h6 class="text-muted">Yonsei Univeristy</h6>
+          <h6 >Ph.D. student</h6>
+          <h6 >Yonsei Univeristy</h6>
         </div>
         
         <div class="text-center mt-2 mb-3">
@@ -238,12 +238,36 @@
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
         <h2 id="publication">Publication</h2>
-        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN" aria-expanded="false" onclick="changeButtonText()">
+        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth" aria-expanded="false" onclick="changeButtonText()">
           Close All
         </button>
       </div>
 
       <div class="col-sm">
+
+        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">
+          <div class="small">
+            Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data
+          </div>
+        </button>
+        <div class="collapse show" id="Synth">
+          <div class="card card-body bg-dark">
+
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="publication-pic" src="./resrc/synth.png" alt="">
+              </div>
+              
+              <div class="col-sm">
+                <p>Synthetic pretraining dataset for low-shot generation of GANs.</p>
+                <strong>K. Baek</strong>, H. Shim
+                <p>Computer Vision and Pattern Recognition (CVPR), 2022</p>
+                <a class="btn btn-sm btn-outline-danger" href="" target="_blank" rel="noopener noreferrer">PDF(TBA)</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
         <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="true" aria-controls="TUNIT">
           <div class="small">
