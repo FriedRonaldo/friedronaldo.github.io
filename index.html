@@ -220,7 +220,7 @@
                   <strong class="px-0">Reviewer</strong> 
                 </div>
                 <div class="row ">
-                  IJCV, ICML-Workshop-SSL, Neurips-Workshop-SSL
+                  IJCV, ICML-Workshop-SSL, Neurips-Workshop-SSL, ICPR
                 </div>
               </div>
             </div>          
@@ -238,7 +238,8 @@
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
         <h3 id="publication">Publication</h3>
-        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth" aria-expanded="false" onclick="changeButtonText()">
+        <!-- <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth" aria-expanded="false" onclick="changeButtonText(this.getAttribute('data-bs-target'))"> -->
+        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth" type="button" onclick="changeButtonText(this.getAttribute('target'))">
           Close All
         </button>
       </div>
@@ -252,7 +253,7 @@
               <a class="btn btn-sm btn-outline-danger" href="" target="_blank" rel="noopener noreferrer">PDF(TBA)</a>
             </div>
             <div class="col-sm-2">
-              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">View more</button>
+              <button class="btn btn-sm btn-outline-info mb-1" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">View more</button>
             </div>
           </p>
           <div class="collapse" id="Synth">
@@ -397,15 +398,28 @@
 
   </div>
 
+  <script src="http://code.jquery.com/jquery-latest.js"></script> 
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.js"></script>
   <script>
-    function changeButtonText(){
+    function changeButtonText(ids){
       txt = document.getElementById("controlAll").innerText;
       if (txt == "Close All"){
+        ids = ids.replaceAll('#', '').split(',')
+        for (id in ids){
+          if ($('#'+ids[id]).is( ":visible" )){
+            $('#'+ids[id]).collapse("toggle");
+          }
+        }
         document.getElementById("controlAll").innerText = "Open All";
       }
       else{
+        ids = ids.replaceAll('#', '').split(',')
+        for (id in ids){
+          if ($('#'+ids[id]).is( ":hidden" )){
+            $('#'+ids[id]).collapse("toggle");
+          }
+        }
         document.getElementById("controlAll").innerText = "Close All";
       }
     }
