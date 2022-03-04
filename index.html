@@ -237,125 +237,155 @@
 
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
-        <h2 id="publication">Publication</h2>
+        <h3 id="publication">Publication</h3>
         <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth" aria-expanded="false" onclick="changeButtonText()">
           Close All
         </button>
       </div>
 
       <div class="col-sm">
-
-        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">
-          <div class="small">
-            Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data
-          </div>
-        </button>
-        <div class="collapse show" id="Synth">
-          <div class="card card-body bg-dark">
-
-            <div class="row">
-              <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/synth.png" alt="">
-              </div>
-              
-              <div class="col-sm">
-                <p>Synthetic pretraining dataset for low-shot generation of GANs.</p>
-                <strong>K. Baek</strong>, H. Shim
-                <p>Computer Vision and Pattern Recognition (CVPR), 2022</p>
-                <a class="btn btn-sm btn-outline-danger" href="" target="_blank" rel="noopener noreferrer">PDF(TBA)</a>
-              </div>
+        <div class="row">
+          <h5><strong>Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Hyunjung Shim <br>
+            CVPR 2022
+            <div class="col-sm-1">
+              <a class="btn btn-sm btn-outline-danger" href="" target="_blank" rel="noopener noreferrer">PDF(TBA)</a>
             </div>
-
-          </div>
-        </div>
-
-        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="true" aria-controls="TUNIT">
-          <div class="small">
-            Rethinking the Truly Unsupervised Image-to-Image Translation
-          </div>
-        </button>
-        <div class="collapse show" id="TUNIT">
-          <div class="card card-body bg-dark">
-
-            <div class="row">
-              <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/tunit.png" alt="">
-              </div>
-              
-              <div class="col-sm">
-                <p>Unsupervised image-to-image translation even without domain labels.</p>
-                <strong>K. Baek</strong>, Y. Choi, Y. Uh, J. Yoo, H. Shim
-                <p>International Conference on Computer Vision (ICCV), 2021</p>
-                <a class="btn btn-sm btn-outline-danger" href="https://arxiv.org/abs/2006.06500" target="_blank" rel="noopener noreferrer">PDF</a>
-              </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">View more</button>
             </div>
-
-          </div>
-        </div>
-
-        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#GridMix" aria-expanded="true" aria-controls="GridMix">
-          <div class="small">
-            GridMix: Strong Regularization Through Local Context Mapping
-          </div>
-        </button>
-        <div class="collapse show" id="GridMix">
-          <div class="card card-body bg-dark">
-            <div class="row">
-              <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/gridmix.png" alt="">
+          </p>
+          <div class="collapse" id="Synth">
+            <div class="card card-body bg-dark">
+  
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/synth.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Proposing to utilize a synthetic pretraining dataset for low-shot generation of GANs</p>
+                  <p>Computer Vision and Pattern Recognition (CVPR), 2022</p>
+                  <a class="btn btn-sm btn-outline-info" href="" target="_blank" rel="noopener noreferrer">Code (TBA)</a>
+                </div>
               </div>
-              
-              <div class="col-sm">
-                <p>Regularization based on mixing samples at the level of patches.</p>
-                <strong>K. Baek*</strong>, D. Bang*, H. Shim (* indicates an equal contribution)
-                <p>Pattern Recognition (PR, IF=7.196), 2021</p>
-                <a class="btn btn-sm btn-outline-danger" href="https://www.sciencedirect.com/science/article/pii/S0031320320303976" target="_blank" rel="noopener noreferrer">PDF</a>
-              </div>
+  
             </div>
           </div>
         </div>
 
-        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="true" aria-controls="PsyNet">
-          <div class="small">
-            PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation
-          </div>
-        </button>
-        <div class="collapse show" id="PsyNet">
-          <div class="card card-body bg-dark">
-            <div class="row">
-              <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/psynet.png" alt="">
+        <div class="row">
+          <h5><strong>Rethinking the Truly Unsupervised Image-to-Image Translation</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Yunjey Choi, Youngjung Uh, Jaejun Yoo, Hyunjung Shim <br>
+            ICCV 2021
+            <div class="col-sm-1">
+              <a class="btn btn-sm btn-outline-danger" href="https://arxiv.org/abs/2006.06500" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="true" aria-controls="TUNIT">View more</button>
+            </div>
+          </p>
+
+          <div class="collapse" id="TUNIT">
+            <div class="card card-body bg-dark">
+
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/tunit.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Unsupervised image-to-image translation even without domain labels.</p>
+                  <p>International Conference on Computer Vision (ICCV), 2021</p>
+                  <a class="btn btn-sm btn-outline-info" href="https://github.com/clovaai/tunit" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
               </div>
-              
-              <div class="col-sm">
-                <p>Self-supervised approach to co-localization problem.</p>
-                <strong>K. Baek*</strong>, M. Lee*, H. Shim (* indicates an equal contribution)
-                <p>AAAI Conference on Artificial Intelligence (AAAI), 2020</p>
-                <a class="btn btn-sm btn-outline-danger" href="https://ojs.aaai.org/index.php/AAAI/article/view/6615" target="_blank" rel="noopener noreferrer">PDF</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h5><strong>GridMix: Strong Regularization Through Local Context Mapping</strong></h5>
+          <p><strong>Kyungjune Baek*</strong>, Duhyeon Bang*, Hyunjung Shim (* indicates an equal contribution)<br>
+            PR 2021
+            <div class="col-sm-1">
+              <a class="btn btn-sm btn-outline-danger" href="https://www.sciencedirect.com/science/article/pii/S0031320320303976" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#GridMix" aria-expanded="true" aria-controls="GridMix">View more</button>
+            </div>
+          </p>
+
+          <div class="collapse" id="GridMix">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/gridmix.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Regularization based on mixing samples at the level of patches.</p>
+                  <p>Pattern Recognition (PR, IF=7.196), 2021</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <button class="btn btn-outline-info w-100 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="true" aria-controls="EditableGAN">
-          <div class="small">
-            Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously
-          </div>
-        </button>
-        <div class="collapse show" id="EditableGAN">
-          <div class="card card-body bg-dark">
-            <div class="row">
-              <div class="col-sm-4">
-                <img class="publication-pic" src="./resrc/editablegan.png" alt="">
+        <div class="row">
+          <h5><strong>PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation</strong></h5>
+          <p><strong>Kyungjune Baek*</strong>, Minhyun Lee*, Hyunjung Shim (* indicates an equal contribution)<br>
+            AAAI 2020
+            <div class="col-sm-1">
+              <a class="btn btn-sm btn-outline-danger" href="https://ojs.aaai.org/index.php/AAAI/article/view/6615" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="true" aria-controls="PsyNet">View more</button>
+            </div>
+          </p>
+
+          <div class="collapse" id="PsyNet">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/psynet.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Self-supervised approach to co-localization problem.</p>
+                  <p>AAAI Conference on Artificial Intelligence (AAAI), 2020</p>
+                </div>
               </div>
-              
-              <div class="col-sm">
-                <p>Attribute editing based on the inversion of the latent space of GANs.</p>
-                <strong>K. Baek</strong>, D. Bang, H. Shim
-                <p>Asian Conference on Computer Vision (ACCV), 2018 <br> 
-                  Oral presentation (Best paper Runner-up)
-                </p>
-                <a class="btn btn-sm btn-outline-danger" href="https://arxiv.org/abs/1807.07700" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h5><strong>Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously</strong></h5>
+          <p><strong>Kyungjune Baek</strong>, Duhyeon Bang, Hyunjung Shim<br>
+            ACCV 2018
+            <div class="col-sm-1">
+              <a class="btn btn-sm btn-outline-danger" href="https://arxiv.org/abs/1807.07700" target="_blank" rel="noopener noreferrer">PDF</a>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-outline-info mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="true" aria-controls="EditableGAN">View more</button>
+            </div>
+          </p>
+
+          <div class="collapse" id="EditableGAN">
+            <div class="card card-body bg-dark">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="publication-pic" src="./resrc/editablegan.png" alt="">
+                </div>
+                
+                <div class="col-sm">
+                  <p>Attribute editing based on the inversion of the latent space of GANs.</p>
+                  <p>Asian Conference on Computer Vision (ACCV), 2018 <br> 
+                    Oral presentation (Best paper Runner-up)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
