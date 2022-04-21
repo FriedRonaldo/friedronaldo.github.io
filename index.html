@@ -239,12 +239,39 @@
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
         <h3 id="publication">Publication</h3>
-        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth,#NoisyDistill" type="button" onclick="changeButtonText(this.getAttribute('target'))">
+        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth,#NoisyDistill,#LogitMix" type="button" onclick="changeButtonText(this.getAttribute('target'))">
           Open All
         </button>
       </div>
 
       <div class="col-sm">
+        <div class="row">
+          <hr>
+          <h5><strong>Logit Mixing Training for More Reliable and Accurate Prediction</strong></h5>
+          <p>Duhyeon Bang*, <strong>Kyungjune Baek*</strong>, Jiwoo Kim*, Yunho Jeon, Jin-Hwa Kim, Jiwon Kim, Jongwuk Lee, Hyunjung Shim (* indicates an equal contribution)<br>
+            IJCAI 2022 <br>
+            <a class="btn btn-sm btn-outline-danger mt-2" href="" target="_blank" rel="noopener noreferrer">PDF</a>
+            <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#LogitMix" aria-expanded="true" aria-controls="LogitMix">View more</button>
+          </p>
+          <div class="collapse mb-1" id="LogitMix">
+            <div class="card card-body bg-dark">
+  
+              <div class="row">
+                <div class="col-sm-4">
+<!--                   <img class="publication-pic" src="./resrc/synth.png" alt=""> -->
+                </div>
+                
+                <div class="col-sm">
+                  <p>Proposing to utilize mixed logits for regularizing a classification model</p>
+                  <p>International Joint Conference on Artificial Intelligence (IJCAI), 2022</p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <hr>
+        </div>
+          
         <div class="row">
           <hr>
           <h5><strong>Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data</strong></h5>
