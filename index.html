@@ -1,651 +1,538 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello world!</title>
+    <title>Kyungjune Baek - AI Researcher</title>
     <link rel="icon" type="image/x-icon" href="./resrc/moon-fill.svg">
-
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="bg-light">
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-light ps-5 pe-5">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bolder fs-4" href="#"> Kyungjune Baek </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-          <a class="nav-link fw-bold" href="#">About</a>
-          <a class="nav-link fw-bold" href="#publication">Publication</a>
-          <button class="btn btn-sm btn-outline-info" type="button" onclick="toggleDark()" style="border: none;">☾</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- style="width: 70%;" -->
-  <div class="container-fluid mt-5" style="width: 80%;">
+<body>
 
-    <div class="row">
-      <div class="col-sm-3">
-
-        <div class="row justify-content-center g-1">
-          <img class="my-pic img-thumbnail" src="./resrc/bkj.jpg" alt="">
-        </div>
-
-        <div class="row text-center mt-3 g-0">
-          <h5 class="fw-bold">Kyungjune Baek</h5>
-          <h6>Assistant Professor</h6>
-          <strong class="small">
-            <p>
-              Dept. of Software <br>
-              Sejong Univ.
-            </p>
-          </strong>
-          <!-- <h6>Department of Software</h6>
-          <h6></h6> -->
-        </div>
-        
-        <div class="text-center mt-2 mb-3">
-
-          <a class="me-2" href="https://github.com/FriedRonaldo" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
-          </a>
-  
-          <a class="me-2" href="https://scholar.google.com/citations?user=jC6P1pQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <i class="bi-google" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
-          </a>
-          
-          <a class="me-2" href="https://github.com/FriedRonaldo" target="_blank" rel="noopener noreferrer"  style="text-decoration: none;">
-            <i class="bi-house-fill" role="img" aria-label="GitHub" style="font-size: 2rem; color: cornflowerblue;"></i>
-          </a>
-        </div>
-
-        <div class="text-center mb-3">
-          <a type="button" class="btn btn-sm btn-outline-info" href="./resrc/KyungjuneBaek_CV.pdf" download>
-            Download CV
-          </a>
-        </div>
-
-      </div>
-
-      <div class="col-sm">
-        <div class="row g-0">
-          Please contact me for the detailed information. 
-          <div class="mt-2">
-            <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Click to copy e-mail" onclick="copy()">
-              kyungjune23@gmail.com
+    <nav class="navbar">
+        <div class="nav-brand fw-bold fs-4"></div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
             </button>
-          </div>
-
         </div>
+    </nav>
 
-        <div class="row mt-4 g-0">
-          <h5 class="fw-bold">Interests</h5>
-          <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"></li>
-              <li class="breadcrumb-item">Generative models</li>
-              <li class="breadcrumb-item">Representation learning</li>
-            </ol>
-          </nav>
-        </div>
-
-        <div class="row mt-4 g-0">
-          <div class="col-sm g-0">
-            <h5 class="fw-bold">Experience</h5>
-
-            <div class="row mb-2">
-                <div class="col-1 me-1">
-                  &#x1F3AF;
-                </div>
-                <div class="col small">
-                  <div class="row">
-                    <strong class="px-0">Assistant Professor</strong> 
-                  </div>
-                  <div class="row ">
-                    Sejong University
-                  </div>
-                  <div class="row ">
-                    Department of Software
-                  </div>
-                  <div class="row ">
-                    2025.03 ~ 
-                  </div>
-                </div>
-              </div>
-
-            <div class="row mb-2">
-                <div class="col-1 me-1">
-                  &#x1F3AF;
-                </div>
-                <div class="col small text-muted">
-                  <div class="row">
-                    <strong class="px-0">ML Research Scientist</strong> 
-                  </div>
-                  <div class="row ">
-                    TwelveLabs 
-                  </div>
-                  <div class="row ">
-                    Video Foundation Model
-                  </div>
-                  <div class="row ">
-                    2024.03 ~ 2025.03
-                  </div>
-                </div>
-              </div>
-
-            <div class="row mb-2">
-              <div class="col-1 me-1">
-                &#x1F3AF;
-              </div>
-              <div class="col small text-muted">
-                <div class="row">
-                  <strong class="px-0">AI Research Engineer</strong> 
-                </div>
-                <div class="row ">
-                  Upstage 
-                </div>
-                <div class="row ">
-                  OCR / Synthetic Dataset
-                </div>
-                <div class="row ">
-                  2023.03 ~ 2024.02 
-                </div>
-              </div>
-            </div>
-              
-            <div class="row mb-2">
-              <div class="col-1 me-1">
-                &#x1F3AF;
-              </div>
-              <div class="col small text-muted">
-                <div class="row">
-                  <strong class="px-0">Visiting researcher</strong> 
-                </div>
-                <div class="row ">
-                  Clova AI Research (CLAIR), Naver Corp. 
-                </div>
-                <div class="row ">
-                  Image-to-Image translation
-                </div>
-                <div class="row ">
-                  2019.09 ~ 2020.02 
-                </div>
-              </div>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <img class="profile-pic" src="./resrc/bkj_small.jpg" alt="Kyungjune Baek">
+            <div class="profile-info">
+                <h1 class="profile-name">Kyungjune Baek</h1>
+                <p class="profile-title">Assistant Professor</p>
+                <p class="profile-org">Department of Software<br>Sejong University</p>
             </div>
 
-            <div class="row mb-2">
-              <div class="col-1 me-1">
-                &#x1F3AF;
-              </div>
-              <div class="col small text-muted">
-                <div class="row">
-                  <strong class="px-0">Development</strong> 
-                </div>
-                <div class="row ">
-                  SIT, Yonsei Univ. 
-                </div>
-                <div class="row ">
-                  Real time remote lecture room system construction 
-                </div>
-                <div class="row ">
-                  2018.09 ~ 2019.02 
-                </div>
-              </div>
+            <div class="social-links">
+                <a href="mailto:kyungjune23@gmail.com" class="social-icon" title="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?user=jC6P1pQAAAAJ&hl=ko" target="_blank"
+                    class="social-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/FriedRonaldo" target="_blank" class="social-icon" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://friedronaldo.github.io/" target="_blank" class="social-icon" title="Homepage"><i
+                        class="fas fa-home"></i></a>
             </div>
 
-          </div>
-    
-          <div class="col-sm g-0">
-            <h5 class="fw-bold">Education</h5>
+            <a href="./resrc/KyungjuneBaek_CV.pdf" class="btn-outline" download>
+                <i class="fas fa-file-download"></i> Download CV
+            </a>
 
-
-            <div class="row mb-2">
-              <div class="col-1 me-1">
-                &#127891;
-              </div>
-              <div class="col text-muted small">
-                <div class="row">
-                  <strong class="px-0">Ph.D.</strong> 
+            <div class="mt-4" style="margin-top: 2rem;">
+                <h6
+                    style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">
+                    Interests</h6>
+                <div class="badges">
+                    <span class="badge">Representation Learning</span>
+                    <span class="badge">Generative Models</span>
+                    <span class="badge">Data Representation</span>
+                    <span class="badge">Computer Vision</span>
                 </div>
-                <div class="row ">
-                  Yonsei Univ.
-                </div>
-                <div class="row ">
-                  Integrated Technology <br>
-                  (Advisor: Prof. Hyunjung Shim, <br>
-                  Dissertation: "Data-Efficient Learning for Generative Adversarial Networks")
-                </div>
-                <div class="row ">
-                  2018.03 ~ 2023.02
-                </div>
-              </div>
             </div>
+        </aside>
 
-            <div class="row">
-              <div class="col-1 me-1">
-                &#127891;
-              </div>
-              <div class="col text-muted small">
-                <div class="row">
-                  <strong class="px-0">B.S.</strong> 
-                </div>
-                <div class="row">
-                  Yonsei Univ.
-                </div>
-                <div class="row">
-                  Electrical & Electronic Eng. and Computer Science 
-                </div>
-                <div class="row">
-                  2014.03 ~ 2018.02 
-                </div>
-              </div>
+        <!-- Main Content (Bento Grid) -->
+        <main class="main-content">
+            <div class="bento-grid">
+
+                <!-- Experience -->
+                <section class="bento-card bento-wide" id="experience">
+                    <h2 class="section-title"><i class="fas fa-briefcase" style="color: var(--primary-color);"></i>
+                        Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Assistant Professor</div>
+                            <div class="tl-org">Sejong University</div>
+                            <div class="tl-desc">Department of Software</div>
+                            <div class="tl-date">Mar 2025 - Present</div>
+                        </div>
+                        <div class="timeline-item past">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">ML Research Scientist</div>
+                            <div class="tl-org">Twelve Labs.</div>
+                            <div class="tl-desc">Video Foundation Model, Evaluation</div>
+                            <div class="tl-date">Mar 2024 - Mar 2025</div>
+                        </div>
+                        <div class="timeline-item past">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">AI Research Engineer</div>
+                            <div class="tl-org">Upstage</div>
+                            <div class="tl-desc">Document Understanding, Synthetic Dataset</div>
+                            <div class="tl-date">Mar 2023 - Mar 2024</div>
+                        </div>
+                        <div class="timeline-item past">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Visiting Researcher</div>
+                            <div class="tl-org">Clova AI Research (CLAIR), Naver Corp.</div>
+                            <div class="tl-desc">Image-to-Image translation</div>
+                            <div class="tl-date">Sep 2019 - Feb 2020</div>
+                        </div>
+                        <div class="timeline-item past">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Developer</div>
+                            <div class="tl-org">SIT, Yonsei University</div>
+                            <div class="tl-desc">Real-time Remote Lecture Room System</div>
+                            <div class="tl-date">Sep 2018 - Feb 2019</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="bento-card">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap" style="color: var(--primary-color);"></i>
+                        Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Ph.D. in Integrated Technology</div>
+                            <div class="tl-org">Yonsei University</div>
+                            <div class="tl-desc" style="font-size: 0.85rem; margin-top: 0.25rem;">Advisor: Prof.
+                                Hyunjung Shim<br>Thesis: Data-efficient Learning for Generative Adversarial Networks
+                            </div>
+                            <div class="tl-date">Mar 2018 - Feb 2023</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">B.S. in EE and CS (Double Major)</div>
+                            <div class="tl-org">Yonsei University</div>
+                            <div class="tl-date">Mar 2014 - Feb 2018</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills & Contact -->
+                <section class="bento-card">
+                    <h2 class="section-title"><i class="fas fa-code" style="color: var(--primary-color);"></i> Skills
+                    </h2>
+                    <div class="skills-grid">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python (PyTorch)</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag">OpenCV / CUDA</span>
+                    </div>
+
+                    <h2 class="section-title" style="margin-top: 2rem;"><i class="fas fa-hands-helping"
+                            style="color: var(--primary-color);"></i> Contact</h2>
+                    <p style="font-size: 0.9rem;">Feel free to reach out to me via email.</p>
+                    <button type="button" class="btn-sub" onclick="copyEmail()" id="emailBtn">
+                        <i class="far fa-copy"></i>&nbsp; kyungjune23@gmail.com
+                    </button>
+                </section>
+
+                <!-- Teaching -->
+                <section class="bento-card" id="teaching">
+                    <h2 class="section-title"><i class="fas fa-chalkboard-teacher"
+                            style="color: var(--primary-color);"></i> Teaching</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Sejong University</div>
+                            <div class="tl-org">Instructor</div>
+                            <div class="tl-desc" style="margin-top: 0.5rem; line-height: 1.6;">
+                                &bull; Generative AI<br>
+                                &bull; Probability and Statistics<br>
+                                &bull; Computer Architecture<br>
+                                &bull; Creative Studies with Self-Directed Learning
+                            </div>
+                        </div>
+                        <div class="timeline-item past">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Yonsei University</div>
+                            <div class="tl-org">Teaching Assistant</div>
+                            <div class="tl-desc" style="margin-top: 0.5rem; line-height: 1.6;">
+                                &bull; Computational Thinking and SW Programming<br>
+                                &bull; Tensorflow for computer vision
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services & Activities -->
+                <section class="bento-card" id="activities">
+                    <h2 class="section-title"><i class="fas fa-globe" style="color: var(--primary-color);"></i>
+                        Activities</h2>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">
+                        Academic Services</h3>
+                    <div class="timeline" style="gap: 1rem; margin-bottom: 2rem;">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Judge</div>
+                            <div class="tl-desc" style="margin-top: 0.2rem; line-height: 1.6;">
+                                &bull; Academic festival at AI<br>
+                                &bull; Hackerthon at Dept. of SW
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">
+                        External Activities</h3>
+                    <div class="timeline" style="gap: 1rem;">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Reviewer</div>
+                            <div class="tl-desc" style="margin-top: 0.2rem; line-height: 1.6;">
+                                CVPR, ICCV, ECCV, NeurIPS, AAAI, IJCAI, WACV, BMVC, 3DV, ICCV-W, ICML-W, NeurIPS-W,
+                                CVPR-W, TPAMI, IJCV, TCSVT, etc.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Invited Talks</div>
+                            <div class="tl-desc" style="margin-top: 0.2rem; line-height: 1.6;">
+                                &bull; Samsung Electronics DS DIT<br>
+                                &bull; OKESTRO A.I. Lab/Data Science
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preprints -->
+                <section class="bento-card bento-wide" id="preprints">
+                    <h2 class="section-title">
+                        <div>
+                            <i class="fas fa-file-alt" style="color: var(--primary-color);"></i> Recent Preprints
+                            <br class="d-md-none">
+                            <span
+                                style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted); display: inline-block; margin-top: 0.25rem;">
+                                (* : equal contribution. / &dagger; : corresponding author.)
+                            </span>
+                        </div>
+                    </h2>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+                        <div class="pub-item">
+                            <div class="pub-title">From Solipsistic Simulators to Shared Reality: Multi-User World
+                                Models and the Consistency Trilemma</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek*&dagger;</strong>, Jiho Jang*, Nojun Kwak
+                            </div>
+                            <div class="pub-venue">Preprint 2026, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Gradient-Driven Gaussian Initialization: A Scalable Framework for 2D
+                                Image Representation via Online Target Generation</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong></div>
+                            <div class="pub-venue">Preprint 2026, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Lost in the Noise: A Stealthy Computation Cost Attack on 3DGS by
+                                Targeting Perceptually Vulnerable Regions</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong></div>
+                            <div class="pub-venue">Preprint 2026, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Multi-dimensional Preference Alignment by Conditioning Reward Itself
+                            </div>
+                            <div class="pub-authors">Jiho Jang, Jin-Young Kim, <strong>Kyungjune Baek&dagger;</strong>,
+                                Nojun
+                                Kwak&dagger;</div>
+                            <div class="pub-venue">Preprint 2025, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Zero-to-Interaction: Generating Dynamic Videos from Synthetic State
+                                Transitions</div>
+                            <div class="pub-authors">Jiho Jang*, Jin-Young Kim*, Nojun Kwak, <strong>Kyungjune
+                                    Baek&dagger;</strong></div>
+                            <div class="pub-venue">Preprint 2025, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Measuring Bias in Text-to-Image Generative Models through Internal
+                                Representation Analysis</div>
+                            <div class="pub-authors">Hyeongmin Lee, <strong>Kyungjune Baek&dagger;</strong></div>
+                            <div class="pub-venue">Preprint 2025, Under Review</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">TWLV-I: Analysis and Insights from Holistic Evaluation on Video
+                                Foundation Models</div>
+                            <div class="pub-authors">Hyungmin Lee*, Jinyoung Kim*, <strong>Kyungjune Baek*</strong>,
+                                Jihwan Kim*, and Twelve Labs Team</div>
+                            <div class="pub-venue">Technical Report 2024</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2408.11318" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Publications -->
+                <section class="bento-card bento-wide" id="publications">
+                    <h2 class="section-title">
+                        <div>
+                            <i class="fas fa-book" style="color: var(--primary-color);"></i> Publications
+                            <br class="d-md-none">
+                            <span
+                                style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted); display: inline-block; margin-top: 0.25rem;">
+                                (* : equal contribution. / &dagger; : corresponding author.)
+                            </span>
+                        </div>
+                    </h2>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+                        <div class="pub-item">
+                            <div class="pub-title">Toward Stable World Models: Measuring and Addressing World
+                                Instability in Generative Environments</div>
+                            <div class="pub-authors">Soonwoo Kwon*, Jin-Young Kim*, Hyojun Go, <strong>Kyungjune
+                                    Baek&dagger;</strong></div>
+                            <div class="pub-venue">Pattern Recognition 2026 (IF=7.6)</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2503.08122" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Rethinking Direct Preference Optimization in Diffusion Models</div>
+                            <div class="pub-authors">Junyong Kang*, Seohyun Lim*, <strong>Kyungjune Baek</strong>,
+                                Hyunjung Shim&dagger;</div>
+                            <div class="pub-venue">AAAI 2026 (Oral)</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2505.18736" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">MomentMix Augmentation with Length-Aware DETR for Temporally Robust
+                                Moment Retrieval</div>
+                            <div class="pub-authors">Seojeong Park, Jiho Choi, <strong>Kyungjune Baek</strong>, Hyunjung
+                                Shim&dagger;</div>
+                            <div class="pub-venue">WACV 2026</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2412.20816" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian
+                                Splatting</div>
+                            <div class="pub-authors">Hyeongmin Lee, <strong>Kyungjune Baek&dagger;</strong></div>
+                            <div class="pub-venue">NeurIPS 2025</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2507.17336" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Generic and Privacy-free Synthetic Data Generation for Pretraining
+                                GANs</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong>, Hyunjung Shim&dagger;</div>
+                            <div class="pub-venue">NeurIPS 2022 Workshop</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Learning from Better Supervision: Self-distillation for Learning with
+                                Noisy Labels</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek*</strong>, Seungho Lee*, Hyunjung
+                                Shim&dagger;</div>
+                            <div class="pub-venue">ICPR 2022</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Logit Mixing Training for More Reliable and Accurate Prediction</div>
+                            <div class="pub-authors">Duhyeon Bang*, <strong>Kyungjune Baek*</strong>, Jiwoo Kim, Yunho
+                                Jeon, Jin-Hwa Kim, Jiwon Kim, Jongwuk Lee, Hyunjung Shim&dagger;</div>
+                            <div class="pub-venue">IJCAI 2022</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Commonality in Natural Images Rescues GANs: Pretraining GANs with
+                                Generic and Privacy-free Synthetic Data</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong>, Hyunjung Shim&dagger;</div>
+                            <div class="pub-venue">CVPR 2022</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2204.04950" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://github.com/FriedRonaldo/Primitives-PS" target="_blank" class="btn-sub"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Rethinking the Truly Unsupervised Image-to-Image Translation</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong>, Yunjey Choi, Youngjung Uh, Jaejun
+                                Yoo, Hyunjung Shim&dagger;</div>
+                            <div class="pub-venue">ICCV 2021</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2006.06500" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://github.com/clovaai/tunit" target="_blank" class="btn-sub"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">GridMix: Strong Regularization Through Local Context Mapping</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek*</strong>, Duhyeon Bang*, Hyunjung
+                                Shim&dagger;
+                            </div>
+                            <div class="pub-venue">Pattern Recognition 2021 (IF=7.2)</div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">PsyNet: Self-Supervised Approach to Object Localization Using Point
+                                Symmetric Transformation</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek*</strong>, Minhyun Lee*, Hyunjung
+                                Shim&dagger;</div>
+                            <div class="pub-venue">AAAI 2020</div>
+                            <div class="pub-links">
+                                <a href="https://github.com/FriedRonaldo/PsyNet" target="_blank" class="btn-sub"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-item">
+                            <div class="pub-title">Editable Generative Adversarial Networks: Generating and Editing
+                                Faces Simultaneously</div>
+                            <div class="pub-authors"><strong>Kyungjune Baek</strong>, Duhyeon Bang, Hyunjung
+                                Shim&dagger;</div>
+                            <div class="pub-venue">ACCV 2018 (Oral, Best paper Runner-up)</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/1807.07700" target="_blank" class="btn-primary"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fas fa-file-pdf"></i> arXiv</a>
+                                <a href="https://github.com/FriedRonaldo/EditableGAN" target="_blank" class="btn-sub"
+                                    style="padding: 0.3rem 0.75rem;"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!-- Projects -->
+                <section class="bento-card bento-wide" id="projects">
+                    <h2 class="section-title"><i class="fas fa-project-diagram"
+                            style="color: var(--primary-color);"></i> Projects</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">National Program of Excellence in Software</div>
+                            <div class="tl-org">Sejong University</div>
+                            <div class="tl-desc">Managing student Hackerthon and Coordinated university-industry
+                                collaboration to connect software students with professionals.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Multi-domain Video Foundation Model</div>
+                            <div class="tl-org">Twelve Labs. &middot; Project Lead</div>
+                            <div class="tl-desc">Developing a video foundation model working on various vision and audio
+                                domains (such as RGB, depth, segmentation, and spectrogram).</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Video Foundation Model and Evaluation</div>
+                            <div class="tl-org">Twelve Labs. &middot; Member</div>
+                            <div class="tl-desc">Developing and evaluating a video foundation model. Designing training
+                                objectives, models, and architecture. Optimizing distributed training speed.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">End-to-End Document Recognition</div>
+                            <div class="tl-org">Upstage &middot; Member</div>
+                            <div class="tl-desc">Developing a multi-modal model to handle processes such as text and
+                                non-text detection, recognition, and named entity filtering in an end-to-end manner.
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Non-text Entity Recognition in Document</div>
+                            <div class="tl-org">Upstage &middot; Project Lead</div>
+                            <div class="tl-desc">Developing a model to recognize non-text entities (e.g., checkbox,
+                                signature, and stamp) in a document.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">Synthetic Document Generation</div>
+                            <div class="tl-org">Upstage &middot; Project Lead</div>
+                            <div class="tl-desc">Generating various synthetic document images for training end-to-end
+                                named entity recognition and document understanding.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tl-title">AI R&D Grand Challenge for Daily Life</div>
+                            <div class="tl-org">Yonsei University &middot; Member</div>
+                            <div class="tl-desc">Composing a dataset of trash and training a model on the dataset for
+                                classifying the blind test set.</div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-
-          </div>
-        </div>
-
-        <div class="row mt-4 g-0">
-
-          <div class="col-sm g-0">
-            <h5 class="fw-bold">Service</h5>
-            
-            <div class="row mb-2">
-              <div class="col-1 me-1">
-                &#x1F3AF;
-              </div>
-              <div class="col small">
-                <div class="row">
-                  <strong class="px-0">Reviewer</strong> 
-                </div>
-                <div class="row ">
-                  CVPR, ECCV, IJCAI, IJCV, TCSVT, ICML-Workshop-SSL, Neurips-Workshop-SSL, ICPR, WACV ...
-                </div>
-              </div>
-            </div>          
-          </div>
-
-          <div class="col-sm g-0">
-            <!--Buffer-->
-          </div>
-
-        </div>
-
-      </div>
+        </main>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-sm-3 text-center">
-        <h3 id="publication">Publication</h3>
-        <button id="controlAll" class="btn btn-outline-danger w-50 mb-1" target="#TUNIT,#GridMix,#PsyNet,#EditableGAN,#Synth,#NoisyDistill,#LogitMix" type="button" onclick="changeButtonText(this.getAttribute('target'))">
-          Open All
-        </button>
-      </div>
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
 
-      <div class="col-sm">
-
-        <div class="row">
-            <hr>
-            <h5><strong>MomentMix Augmentation with Length-Aware DETR for Temporally Robust Moment Retrieval</strong></h5>
-            <p>Seojeong Park, Jiho Choi, <strong>Kyungjune Baek</strong>, Hyunjung Shim<br>
-              WACV 2026<br>
-              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2505.18736" target="_blank" rel="noopener noreferrer">PDF</a>
-            </p>
-            <div class="collapse mb-1" id="rd4dgs">
-              <div class="card card-body bg-dark">
-    
-                <div class="row">
-
-                </div>
-    
-              </div>
-            </div>
-          </div>
-          
-        <div class="row">
-            <hr>
-            <h5><strong>Rethinking Direct Preference Optimization in Diffusion Models</strong></h5>
-            <p>Junyong Kang, Seohyun Lim, <strong>Kyungjune Baek</strong>, Hyunjung Shim<br>
-              AAAI 2026 (Oral)<br>
-              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2505.18736" target="_blank" rel="noopener noreferrer">PDF</a>
-            </p>
-            <div class="collapse mb-1" id="rd4dgs">
-              <div class="card card-body bg-dark">
-    
-                <div class="row">
-
-                </div>
-    
-              </div>
-            </div>
-          </div>
-          
-        <div class="row">
-            <hr>
-            <h5><strong>Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian Splatting</strong></h5>
-            <p>Hyeongmin Lee, <strong>Kyungjune Baek+</strong><br>
-              NeurIPS 2025<br>
-              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2507.17336" target="_blank" rel="noopener noreferrer">PDF</a>
-            </p>
-            <div class="collapse mb-1" id="rd4dgs">
-              <div class="card card-body bg-dark">
-    
-                <div class="row">
-
-                </div>
-    
-              </div>
-            </div>
-          </div>
-          
-        <div class="row">
-            <hr>
-            <h5><strong>Toward Stable World Models: Measuring and Addressing World Instability in Generative Environments</strong></h5>
-            <p>Soonwoo Kwon*, Jin-Young Kim*, Hyojun Go, <strong>Kyungjune Baek+</strong><br>
-              Preprint 2025<br>
-              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2503.08122" target="_blank" rel="noopener noreferrer">PDF</a>
-            </p>
-            <div class="collapse mb-1" id="VFM">
-              <div class="card card-body bg-dark">
-    
-                <div class="row">
-
-                </div>
-    
-              </div>
-            </div>
-          </div>
-
-        <div class="row">
-            <hr>
-            <h5><strong>TWLV-I: Analysis and Insights from Holistic Evaluation on Video Foundation Models</strong></h5>
-            <p>TwelveLabs Research Science Team (* Co-First Author)<br>
-              Tech Report 2024 <br>
-              <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2408.11318" target="_blank" rel="noopener noreferrer">PDF</a>
-              <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#VFM" aria-expanded="true" aria-controls="VFM">View more</button>
-            </p>
-            <div class="collapse mb-1" id="VFM">
-              <div class="card card-body bg-dark">
-    
-                <div class="row">
-
-                </div>
-    
-              </div>
-            </div>
-          </div>
-
-        <div class="row">
-          <hr>
-          <h5><strong>Logit Mixing Training for More Reliable and Accurate Prediction</strong></h5>
-          <p>Duhyeon Bang*, <strong>Kyungjune Baek*</strong>, Jiwoo Kim, Yunho Jeon, Jin-Hwa Kim, Jiwon Kim, Jongwuk Lee, Hyunjung Shim (* indicates an equal contribution)<br>
-            IJCAI 2022 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#LogitMix" aria-expanded="true" aria-controls="LogitMix">View more</button>
-          </p>
-          <div class="collapse mb-1" id="LogitMix">
-            <div class="card card-body bg-dark">
-  
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/LogitMix.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Proposing to utilize mixed logits for regularizing a classification model</p>
-                  <p>International Joint Conference on Artificial Intelligence (IJCAI), 2022</p>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-          <hr>
-        </div>
-          
-        <div class="row">
-          <h5><strong>Commonality in Natural Images Rescues GANs: Pretraining GANs with Generic and Privacy-free Synthetic Data</strong></h5>
-          <p><strong>Kyungjune Baek</strong>, Hyunjung Shim <br>
-            CVPR 2022 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2204.04950" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" id="ctr-synth" type="button" data-bs-toggle="collapse" data-bs-target="#Synth" aria-expanded="true" aria-controls="Synth">View more</button>
-          </p>
-          <div class="collapse mb-1" id="Synth">
-            <div class="card card-body bg-dark">
-  
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/synth.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Proposing to utilize a synthetic pretraining dataset for low-shot generation of GANs</p>
-                  <p>Computer Vision and Pattern Recognition (CVPR), 2022</p>
-                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/Primitives-PS" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-          <hr>
-        </div>
-
-        <div class="row">
-          <h5><strong>Rethinking the Truly Unsupervised Image-to-Image Translation</strong></h5>
-          <p><strong>Kyungjune Baek</strong>, Yunjey Choi, Youngjung Uh, Jaejun Yoo, Hyunjung Shim <br>
-            ICCV 2021 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/2006.06500" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#TUNIT" aria-expanded="true" aria-controls="TUNIT">View more</button>
-          </p>
-
-          <div class="collapse mb-1" id="TUNIT">
-            <div class="card card-body bg-dark">
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/tunit.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Unsupervised image-to-image translation even without domain labels.</p>
-                  <p>International Conference on Computer Vision (ICCV), 2021</p>
-                  <a class="btn btn-sm btn-outline-info" href="https://github.com/clovaai/tunit" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-
-        <div class="row">
-          <h5><strong>GridMix: Strong Regularization Through Local Context Mapping</strong></h5>
-          <p><strong>Kyungjune Baek*</strong>, Duhyeon Bang*, Hyunjung Shim (* indicates an equal contribution)<br>
-            PR 2021 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="https://www.sciencedirect.com/science/article/pii/S0031320320303976" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#GridMix" aria-expanded="true" aria-controls="GridMix">View more</button>
-          </p>
-
-          <div class="collapse mb-1" id="GridMix">
-            <div class="card card-body bg-dark">
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/gridmix.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Regularization based on mixing samples at the level of patches.</p>
-                  <p>Pattern Recognition (PR, IF=7.196), 2021</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-
-        <div class="row">
-          <h5><strong>PsyNet: Self-Supervised Approach to Object Localization Using Point Symmetric Transformation</strong></h5>
-          <p><strong>Kyungjune Baek*</strong>, Minhyun Lee*, Hyunjung Shim (* indicates an equal contribution)<br>
-            AAAI 2020 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="https://ojs.aaai.org/index.php/AAAI/article/view/6615" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#PsyNet" aria-expanded="true" aria-controls="PsyNet">View more</button>
-          </p>
-
-          <div class="collapse mb-1" id="PsyNet">
-            <div class="card card-body bg-dark">
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/psynet.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Self-supervised approach to co-localization problem.</p>
-                  <p>AAAI Conference on Artificial Intelligence (AAAI), 2020</p>
-                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/PsyNet" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-
-        <div class="row">
-          <h5><strong>Learning from Better Supervision: Self-distillation for Learning with Noisy Labels</strong></h5>
-          <p><strong>Kyungjune Baek*</strong>, Seungho Lee*, Hyunjung Shim (* indicates an equal contribution)<br>
-            ICPR 2022 <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#NoisyDistill" aria-expanded="true" aria-controls="NoisyDistill">View more</button>
-          </p>
-
-          <div class="collapse mb-1" id="NoisyDistill">
-            <div class="card card-body bg-dark">
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/noisydistill.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Improving a classifier with the knowledge distillation against noisy labels.</p>
-                  <p>International Conference on Pattern Recognition (ICPR), 2022</p>
-                  <a class="btn btn-sm btn-outline-info" href="" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr>
-        </div>
-
-        <div class="row">
-          <h5><strong>Editable Generative Adversarial Networks: Generating and Editing Faces Simultaneously</strong></h5>
-          <p><strong>Kyungjune Baek</strong>, Duhyeon Bang, Hyunjung Shim<br>
-            ACCV 2018 (Oral) <br>
-            <a class="btn btn-sm btn-outline-danger mt-2" href="https://arxiv.org/abs/1807.07700" target="_blank" rel="noopener noreferrer">PDF</a>
-            <button class="btn btn-sm btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#EditableGAN" aria-expanded="true" aria-controls="EditableGAN">View more</button>
-          </p>
-
-          <div class="collapse mb-1" id="EditableGAN">
-            <div class="card card-body bg-dark">
-              <div class="row">
-                <div class="col-sm-4">
-                  <img class="publication-pic" src="./resrc/editablegan.png" alt="">
-                </div>
-                
-                <div class="col-sm">
-                  <p>Attribute editing based on the inversion of the latent space of GANs.</p>
-                  <p>Asian Conference on Computer Vision (ACCV), 2018 <br> 
-                  Oral presentation (Best paper Runner-up)</p>
-                  <a class="btn btn-sm btn-outline-info" href="https://github.com/FriedRonaldo/EditableGAN" target="_blank" rel="noopener noreferrer">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <script src="./js/jquery-latest.js"></script> 
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script>
-    function changeButtonText(ids){
-      txt = document.getElementById("controlAll").innerText;
-      if (txt == "Close All"){
-        ids = ids.replaceAll('#', '').split(',')
-        for (id in ids){
-          if ($('#'+ids[id]).is( ":visible" )){
-            $('#'+ids[id]).collapse("toggle");
-          }
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
         }
-        document.getElementById("controlAll").innerText = "Open All";
-      }
-      else{
-        ids = ids.replaceAll('#', '').split(',')
-        for (id in ids){
-          if ($('#'+ids[id]).is( ":hidden" )){
-            $('#'+ids[id]).collapse("toggle");
-          }
+
+        // Copy Email Script
+        function copyEmail() {
+            navigator.clipboard.writeText('kyungjune23@gmail.com').then(() => {
+                const btn = document.getElementById('emailBtn');
+                const originalHtml = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    btn.innerHTML = originalHtml;
+                }, 2000);
+            });
         }
-        document.getElementById("controlAll").innerText = "Close All";
-      }
-    }
-
-    function copyToClipboard(val) {
-      const t = document.createElement("textarea");
-      document.body.appendChild(t);
-      t.value = val;
-      t.select();
-      document.execCommand('copy');
-      document.body.removeChild(t);
-    }
-    function copy() {
-      copyToClipboard('kyungjune23@gmail.com');
-    }
-  </script>
-
-  <script>
-    function toggleDark(){
-      elmts_dark = document.getElementsByClassName("bg-dark");
-      if (elmts_dark.length <= 1){
-        elmts_light = document.getElementsByClassName("bg-light");
-        for (e=0;e<elmts_light.length;){
-          elmts_light[e].classList.add("text-white");
-          elmts_light[e].classList.add("bg-dark");
-          elmts_light[e].classList.remove("bg-light");
-        }
-      }
-      else{
-      for (e=0;e<elmts_dark.length;){
-        if (elmts_dark[e].classList.contains("navbar")){
-          e++;
-          continue;
-        }
-        elmts_dark[e].classList.add("bg-light");
-        elmts_dark[e].classList.remove("text-white");
-        elmts_dark[e].classList.remove("bg-dark");
-      }
-    }
-
-    }
-  </script>
-
-  <script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-  </script>
-
+    </script>
 </body>
+
 </html>
